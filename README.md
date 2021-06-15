@@ -1,7 +1,6 @@
 # cs345web
-Website development project focused on UX/UI design principles
-
-Author: Daryle Ji
+# Author: Daryle
+# Website development project focused on UX/UI design principles
 
 A completed project from the course COMPSCI345 at the University of Auckland
 
