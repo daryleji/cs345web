@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Author: Daryle Ji -->
+<!-- UPI/UID: dji058/990645618-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatble" content="ie=edge">
+    <link href="dji058.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="dji058.js"></script>
+    <title>BPD</title>
+</head>
+
+
+<!-- Top of the page -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="clipart517824.png" height="40px" width="40px">
+            <h4>Book Program Discussion</h4>
+        </div>
+        <ul class="nav-links" id="navbar">
+            <li><a href="#home" class="btn active" class="home">Home</a></li>
+            <li><a href="#" class="btn" class="about">About Us</a></li>
+            <li><a href="#" class="btn" class="get-started">Get Started</a></li>
+            <li><a href="#" class="btn" class="news">News</a></li>
+            <li><a href="#" class="btn" class="login">Login</a></li>
+        </ul>
+        <div class="dropdown">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+</header>
+
+<body class="raleway-font main">
+    <div id="home" class="custom-background-color image-back">
+
+        <h2 class="title">
+            THE IDEA
+        </h2>
+
+        <p class="home-text-1">
+            Book Discussion Scheme lends books & professionally prepared discussion notes to book groups.
+            Groups receive enough copies of their selected title to allow everyone in the group to read the same
+            book at
+            the same time.
+        </p>
+        <p class="home-text-2">
+            We're a nationwide non-profit organisation with a 46-year track record. We try to keep our membership
+            costs
+            affordable for
+            everyone, while offering a range of programmes and titles to suit a wide range of reading tastes - from
+            classics to the lastest page-turners.
+            There's 1000+ fiction & non-fiction titles to choose from. We can help you join an existing group, or
+            you
+            can register your group with us.
+        </p>
+    </div>
+
+    <div class="row custom-color">
+        <div class="column left">
+            <div class="box">
+                <h2 class="box-title-left">
+                    Get Involved
+                </h2>
+                <p class="join-text">
+                    Meet new people.
+                    <br />
+                    <br />
+                    Experience new and interesting reading adventures.
+                    <br />
+                    <br />
+                    Whatever the reason you want to be part of a book group, we can help.
+                    <br />
+                    <br />
+                    <br />
+                    <button id="modalButton" class="join-button">Join Us!</button>
+                </p>
+
+            </div>
+        </div>
+        <div class="column right">
+            <div class="box">
+                <h2 class="box-title-right">
+                    Popular Books This Week
+                </h2>
+                <p class="book-images">
+                    <a class="pop-book-cover">
+                        <img width=100% height=100%
+                            src="https://images-na.ssl-images-amazon.com/images/I/41MT0PCoKZL._SX301_BO1,204,203,200_.jpg">
+                    </a>
+                    <a class="pop-book-cover">
+                        <img width=100% height=100% src="https://images4.penguinrandomhouse.com/cover/9781400079988">
+                    </a>
+                    <a class="pop-book-cover">
+                        <img width=100% height=100% src="https://images4.penguinrandomhouse.com/cover/9781400033423">
+                    </a>
+                    <a class="pop-book-cover">
+                        <img width=100% height=100% src="https://images2.penguinrandomhouse.com/cover/9780679722762">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="form-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Form -->
+            <div id="bookclubrego">
+                <form action="action_page.php">
+                    <div class="container">
+                        <h1 style="text-align: center;">Register</h1>
+                        <br />
+                        <p style="text-align: center;">Please fill in this form to sign up for a book group</p>
+                        <hr style="width:80%; margin-left:10% !important; margin-right:10% !important;">
+
+                        <div class="row" id="userDetails">
+                            <div class="column left-fifty" id="">
+                                <label for="firstname"><b>Name</b></label>
+                                <input type="text" placeholder="Enter Name" name="firstname" id="firstname" required>
+
+                                <label for="surname"><b>Surname</b></label>
+                                <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+
+                            </div>
+                            <div class="column right-fifty">
+                                <label for="username"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                            </div>
+                        </div>
+
+                        <hr style="width:80%; margin-left:10% !important; margin-right:10% !important;">
+                        
+                        <div class="row" id="contacts">
+                            <div class="column left-fifty">
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                            </div>
+                            <div class="column right-fifty">
+                                <label for="phone"><b>Phone Number</b></label>
+                                <input type="text" placeholder="Enter Phone Number" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        <hr style="width:80%; margin-left:10% !important; margin-right:10% !important;">
+
+                        <div class="row" id="addresses">
+                            <label class="center" for="home-address"><b>Home Address</b></label>
+                            <input type="text" placeholder="Enter Home Address" name="home-address" id="home-address"
+                                required>
+
+                            <label class="center" for="work-address"><b>Work Address</b></label>
+                            <input type="text" placeholder="Enter Work Address" name="work-address" id="work-address"
+                                required>
+                        </div>
+                        <hr style="width:80%; margin-left:10% !important; margin-right:10% !important;">
+                        <p style="text-align: center;">By signing up to a book group, you agree to our <a href="#">Terms
+                                &
+                                Privacy</a>.</p>
+                        <br>
+                        <div class="center">
+                            <button type="submit" class="registerbtn custom-background-color">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var btnContainer = document.getElementById("navbar");
+    var btns = btnContainer.getElementsByClassName("btn");
+
+    for (var x = 0; x < btns.length; x++) {
+        btns[x].addEventListener('click', function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+    }
+</script>
+
+</html>
